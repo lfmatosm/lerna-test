@@ -8,6 +8,7 @@
     "test": "jest --silent"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.93",
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
     "lerna": "^4.0.0",

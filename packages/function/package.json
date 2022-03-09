@@ -7,8 +7,5 @@
   "license": "ISC",
   "dependencies": {
     "utils": "*"
-  },
-  "devDependencies": {
-    "@types/aws-lambda": "^8.10.93"
   }
 }
