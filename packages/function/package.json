@@ -1,0 +1,14 @@
+{
+  "name": "function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "utils": "*"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.93"
+  }
+}
