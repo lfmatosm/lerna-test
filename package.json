@@ -4,8 +4,11 @@
   "scripts": {
     "clean": "lerna clean -y",
     "bootstrap": "lerna bootstrap",
-    "build": "lerna exec -- tsc",
-    "test": "jest --silent"
+    "bootstrapPackage": "lerna bootstrap --include-dependencies --scope",
+    "build": "lerna exec tsc",
+    "buildPackage": "lerna exec --include-dependencies 'tsc' --scope",
+    "test": "jest --silent",
+    "testPackage": "lerna exec 'jest --silent' --scope"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.93",
