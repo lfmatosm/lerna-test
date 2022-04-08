@@ -8,7 +8,8 @@
     "build": "lerna exec tsc",
     "buildPackage": "lerna exec --include-dependencies 'tsc' --scope",
     "test": "jest --silent",
-    "testPackage": "lerna exec 'jest --silent' --scope"
+    "testPackage": "lerna exec 'jest --silent' --scope",
+    "prune": "lerna exec 'npm prune --production'"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.93",
