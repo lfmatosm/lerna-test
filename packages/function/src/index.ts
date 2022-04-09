@@ -1,7 +1,11 @@
 import { HttpResponse, ResponseCreator } from 'utils';
 import { APIGatewayProxyEvent } from 'aws-lambda';
 
-
+/** 
+* Handles a lambda request and returns a mock response to the caller.
+* @param {APIGatewayProxyEvent} _ - AWS ApiGateway Proxy Event passed through the lambda context
+* @return {Promise<HttpResponse>} HttpResponse to the client
+*/
 async function handler(_: APIGatewayProxyEvent): Promise<HttpResponse> {
     try {
         const payload = {
