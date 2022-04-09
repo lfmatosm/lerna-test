@@ -3,6 +3,10 @@ export type HttpResponse =  {
     message?: string;
 };
 
+/**
+* Creates HTTP responses given status code and optional message to return to 
+the client
+*/
 export class ResponseCreator {
 
     static send(status: number, message?: object): HttpResponse {
