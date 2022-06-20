@@ -1,8 +1,13 @@
 {
-  "name": "utils",
+  "name": "lffloyd-test-utils",
   "version": "0.0.3",
   "description": "",
   "main": "dist/src/index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --silent",
+    "prune": "npm prune --production"
+  }
 }

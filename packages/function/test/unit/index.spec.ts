@@ -1,5 +1,5 @@
 import { APIGatewayProxyEvent } from 'aws-lambda';
-import { HttpResponse } from 'utils';
+import { HttpResponse } from 'lffloyd-test-utils';
 import { handler } from '../../src/index';
 
 describe('Unit tests for "function" package', () => {

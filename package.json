@@ -5,17 +5,18 @@
     "clean": "lerna clean -y",
     "bootstrap": "lerna bootstrap",
     "bootstrapPackage": "lerna bootstrap --include-dependencies --scope",
-    "build": "lerna exec tsc",
+    "build": "lerna run build",
     "buildPackage": "lerna exec --include-dependencies 'tsc' --scope",
-    "test": "jest --silent",
+    "test": "lerna run test",
     "testPackage": "lerna exec 'jest --silent' --scope",
-    "prune": "lerna exec 'npm prune --production'"
+    "prune": "lerna run prune"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.93",
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
     "lerna": "^5.1.4",
+    "nx": "^14.3.6",
     "ts-jest": "^27.1.3",
     "typescript": "^4.6.2"
   }

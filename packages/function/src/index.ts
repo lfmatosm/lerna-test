@@ -1,4 +1,4 @@
-import { HttpResponse, ResponseCreator } from 'utils';
+import { HttpResponse, ResponseCreator } from 'lffloyd-test-utils';
 import { APIGatewayProxyEvent } from 'aws-lambda';
 
 /** 
