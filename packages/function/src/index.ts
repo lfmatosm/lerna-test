@@ -8,6 +8,7 @@ import { APIGatewayProxyEvent } from 'aws-lambda';
 */
 async function handler(_: APIGatewayProxyEvent): Promise<HttpResponse> {
     try {
+        console.info('Starting execution...');
         const payload = {
             text: 'Take it'
         };
