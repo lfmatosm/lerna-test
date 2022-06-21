@@ -16,7 +16,6 @@ const PAYLOAD = {
 */
 async function handler(_: APIGatewayProxyEvent): Promise<HttpResponse> {
     try {
-        console.info('Starting execution...');
         console.info('Successfully invoked handler');
         return ResponseCreator.send(200, PAYLOAD);
     } catch (err) {
