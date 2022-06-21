@@ -1,13 +1,12 @@
 name: Publish
 on:
   pull_request:
-    types: [closed]
+    types: [opened]
     branches:
       - main
 
 jobs:
   publish:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
@@ -20,11 +19,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-
-      - name: "Setup npm"
-        run: |
-          npm set registry=https://registry.npmjs.org
-          npm set "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTOMATION_TOKEN }}"
       
       - name: "npm install"
         run: |
@@ -41,12 +35,3 @@ jobs:
       - name: "Lerna Test"
         run: |
           npm run testAffected
-      
-      - name: "Lerna Version/Publish"
-        env:
-          GH_TOKEN: ${{ secrets.GB_AUTOMATION_TOKEN }}
-        run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-
-          npx lerna publish --conventional-commits -y
