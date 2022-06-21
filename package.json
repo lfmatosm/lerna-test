@@ -4,12 +4,13 @@
   "scripts": {
     "clean": "lerna clean -y",
     "bootstrap": "lerna bootstrap",
-    "bootstrapPackage": "lerna bootstrap --include-dependencies --scope",
+    "bootstrapPackage": "lerna bootstrap --include-dependencies --include-dependents --scope",
     "build": "lerna run build",
-    "buildPackage": "lerna exec --include-dependencies 'tsc' --scope",
+    "buildPackage": "lerna run build --include-dependencies --include-dependents --scope",
     "test": "lerna run test",
-    "testPackage": "lerna exec 'jest --silent' --scope",
-    "prune": "lerna run prune"
+    "testPackage": "lerna run test --scope",
+    "prune": "lerna run prune",
+    "buildAffected": "npm run buildPackage $(./affected.sh)"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.93",
