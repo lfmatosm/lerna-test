@@ -8,9 +8,11 @@
     "build": "lerna run build",
     "buildPackage": "lerna run build --include-dependencies --include-dependents --scope",
     "test": "lerna run test",
-    "testPackage": "lerna run test --scope",
+    "testPackage": "lerna run test --include-dependencies --include-dependents --scope",
     "prune": "lerna run prune",
-    "buildAffected": "npm run buildPackage $(./affected.sh)"
+    "buildAffected": "npm run buildPackage $(./affected.sh)",
+    "testAffected": "npm run testPackage $(./affected.sh)",
+    "publishCi": "lerna publish --conventional-commits -y"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.93",
