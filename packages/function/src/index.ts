@@ -19,9 +19,9 @@ async function handler(_: APIGatewayProxyEvent): Promise<HttpResponse> {
     } catch (err) {
         if (err instanceof Error) {
             console.error(`Error while invoking handler: ${err.message}`);
-            return ResponseCreator.send(500, { error: err.message });
+            return ResponseCreator.send(500, { error: err.message, timestamp: Date.now() });
         }
-        return ResponseCreator.send(500, { error: 'Internal Server Error' });
+        return ResponseCreator.send(500, { error: 'Internal Server Error', timestamp: Date.now() });
     }
 }
 
