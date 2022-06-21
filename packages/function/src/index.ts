@@ -1,6 +1,9 @@
 import { HttpResponse, ResponseCreator } from 'lffloyd-test-utils';
 import { APIGatewayProxyEvent } from 'aws-lambda';
 
+/**
+ * @description Cached payload to speed-up lamba's processing
+ */
 const PAYLOAD = {
     text: 'Message',
     body: { result: 123, size: 256 },
