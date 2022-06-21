@@ -11,7 +11,7 @@ async function handler(_: APIGatewayProxyEvent): Promise<HttpResponse> {
         console.info('Starting execution...');
         const payload = {
             text: 'Message',
-            body: { result: 123 },
+            body: { result: 123, size: 256 },
         };
         console.info('Successfully invoked handler');
         return ResponseCreator.send(200, payload);
