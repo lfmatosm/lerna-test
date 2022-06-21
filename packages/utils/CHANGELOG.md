@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-utils@1.1.0...lffloyd-test-utils@1.1.1) (2022-06-21)
+
+**Note:** Version bump only for package lffloyd-test-utils
+
+
+
+
+
 # 1.1.0 (2022-06-21)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.2.1...lffloyd-test-function@1.3.0) (2022-06-21)
+
+
+### Features
+
+* **function:** adds timestamps to error responses ([2f56f8a](https://github.com/lffloyd/lerna-test/commit/2f56f8adbd006564c695ab9db10a26875576472d))
+
+
+
+
+
 ## [1.2.1](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.2.0...lffloyd-test-function@1.2.1) (2022-06-21)
 
 **Note:** Version bump only for package lffloyd-test-function
