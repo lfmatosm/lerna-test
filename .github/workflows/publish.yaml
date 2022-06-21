@@ -1,0 +1,48 @@
+name: Publish
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  publish:
+    if: github.event.pull_request.merged == true # Condition
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: "Use NodeJS 16"
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: "Setup npm"
+        run: |
+          npm set registry=https://registry.npmjs.org
+          npm set "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTOMATION_TOKEN }}"
+      
+      - name: "Lerna Bootstrap"
+        run: |
+          npm run bootstrap
+      
+      - name: "Lerna Build"
+        run: |
+          npm run buildAffected
+
+      - name: "Lerna Test"
+        run: |
+          npm run testAffected
+      
+      - name: "Lerna Version/Publish"
+        env:
+          GH_TOKEN: ${{ secrets.GB_AUTOMATION_TOKEN }}
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
+          npx lerna publish --conventional-commits -y
