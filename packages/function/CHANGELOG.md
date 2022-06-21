@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.1.0...lffloyd-test-function@1.2.0) (2022-06-21)
+
+
+### Features
+
+* **function:** adds size field to returning body ([7f883f0](https://github.com/lffloyd/lerna-test/commit/7f883f0e35d438e94eba2f7a697d803fecba7df9))
+
+
+
+
+
 # 1.1.0 (2022-06-21)
 
 
