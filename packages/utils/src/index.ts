@@ -15,10 +15,11 @@ export class ResponseCreator {
      * @returns HTTP response
      */
     static send(status: number, message?: object): HttpResponse {
+        console.info(`Received status - ${status} and object - ${message}`);
         return {
             statusCode: status,
             message: message ? JSON.stringify(message) : undefined,
-        }
+        };
     }
 
 };
