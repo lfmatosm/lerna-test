@@ -6,7 +6,8 @@ describe('Unit tests for "function" package', () => {
     test('handler call returns expected success response', async () => {
         const expected: HttpResponse = {
             statusCode: 200,
-            message: '{\"text\":\"Message\",\"body\":{\"result\":123,\"size\":256}}'
+            message: '{\"text\":\"Message\",\"body\":{\"result\":123,\"size\":256}}',
+            timestamp: expect.any(Number),
         };
         const result = await handler({} as APIGatewayProxyEvent);
         expect(result).toStrictEqual(expected);
