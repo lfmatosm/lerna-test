@@ -14,8 +14,9 @@ const PAYLOAD = {
 * @param {APIGatewayProxyEvent} _ - AWS ApiGateway Proxy Event passed through the lambda context
 * @return {Promise<HttpResponse>} HttpResponse to the client
 */
-async function handler(_: APIGatewayProxyEvent): Promise<HttpResponse> {
+async function handler(event: APIGatewayProxyEvent): Promise<HttpResponse> {
     try {
+        if (!Boolean(event)) throw new Error('Empty event received!');
         console.info('Successfully invoked handler');
         return ResponseCreator.send(200, PAYLOAD);
     } catch (err) {
