@@ -6,6 +6,7 @@ describe('Unit tests for "utils" package', () => {
         const expected: HttpResponse = {
             statusCode: 200,
             message: '{\"singer\":\"Someone\"}',
+            timestamp: expect.any(Number),
         };
         expect(result).toStrictEqual(expected);
     });

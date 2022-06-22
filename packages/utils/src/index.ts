@@ -1,6 +1,7 @@
 export type HttpResponse =  {
     statusCode: number;
     message?: string;
+    timestamp: number;
 };
 
 /**
@@ -19,6 +20,7 @@ export class ResponseCreator {
         return {
             statusCode: status,
             message: message ? JSON.stringify(message) : undefined,
+            timestamp: Date.now(),
         };
     }
 }
