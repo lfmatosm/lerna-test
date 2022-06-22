@@ -21,7 +21,6 @@ jobs:
 
       - name: "Setup npm"
         run: |
-          npm set registry=https://registry.npmjs.org/
           npm set "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTOMATION_TOKEN }}"
       
       - name: "npm install"
@@ -46,5 +45,5 @@ jobs:
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          cat /home/runner/.npmrc
-          # npx lerna publish --conventional-commits -y
+          
+          npx lerna publish --conventional-commits -y
