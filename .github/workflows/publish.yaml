@@ -21,7 +21,7 @@ jobs:
 
       - name: "Setup npm"
         run: |
-          npm set registry=http://registry.npmjs.org/
+          npm set registry=https://registry.npmjs.org/
           npm set "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTOMATION_TOKEN }}"
       
       - name: "npm install"
