@@ -47,4 +47,4 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           npm config list --json
-          npx lerna publish --conventional-commits -y
+          # npx lerna publish --conventional-commits -y
