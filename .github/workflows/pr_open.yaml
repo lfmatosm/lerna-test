@@ -1,4 +1,4 @@
-name: Publish
+name: Pull Request Open
 on:
   pull_request:
     types: [opened]
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  publish:
+  pr_open:
     runs-on: ubuntu-latest
 
     steps:
