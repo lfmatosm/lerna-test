@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [1.3.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.2.1...lffloyd-test-function@1.3.0) (2022-06-22)
+# [1.3.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.2.1...lffloyd-test-function@1.3.0) (2022-06-21)
 
 
 ### Features
