@@ -1,9 +1,7 @@
-name: Publish
+name: PR Open
 on:
   pull_request:
     types: [closed]
-    branches:
-      - main
 
 jobs:
   publish:
@@ -48,5 +46,5 @@ jobs:
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-
+          npm config list --json
           npx lerna publish --conventional-commits -y
