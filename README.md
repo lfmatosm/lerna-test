@@ -1,5 +1,6 @@
 # lerna-test
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+![npm publish](https://github.com/lffloyd/lerna-test/actions/workflows/publish.yaml/badge.svg)
 
 Repo to test out a lerna-based monorepo structure. Configured with jest and typescript.
 
