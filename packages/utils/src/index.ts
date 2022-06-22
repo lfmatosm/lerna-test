@@ -21,6 +21,4 @@ export class ResponseCreator {
             message: message ? JSON.stringify(message) : undefined,
         };
     }
-
-};
-
+}
