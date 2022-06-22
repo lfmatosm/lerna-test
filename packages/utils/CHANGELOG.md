@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-utils@1.1.2...lffloyd-test-utils@1.2.0) (2022-06-22)
+
+
+### Features
+
+* **utils:** adds timestamp field to HttpResponse ([6ca5bb9](https://github.com/lffloyd/lerna-test/commit/6ca5bb93f37948e7aae1aa162755b822d85f230a))
+
+
+
+
+
 ## [1.1.2](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-utils@1.1.1...lffloyd-test-utils@1.1.2) (2022-06-22)
 
 **Note:** Version bump only for package lffloyd-test-utils
