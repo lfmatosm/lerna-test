@@ -4,14 +4,14 @@
   "scripts": {
     "clean": "lerna clean -y",
     "bootstrap": "lerna bootstrap",
-    "bootstrapPackage": "lerna bootstrap --include-dependencies --include-dependents --scope",
+    "bootstrapPackages": "lerna bootstrap --include-dependencies --include-dependents --scope",
     "build": "lerna run build",
-    "buildPackage": "lerna run build --include-dependencies --include-dependents --scope",
+    "buildPackagse": "lerna run build --include-dependencies --include-dependents --scope",
     "test": "lerna run test",
-    "testPackage": "lerna run test --include-dependencies --include-dependents --scope",
+    "testPackages": "lerna run test --include-dependencies --include-dependents --scope",
     "prune": "lerna run prune",
-    "buildAffected": "npm run buildPackage $(./affected.sh)",
-    "testAffected": "npm run testPackage $(./affected.sh)",
+    "buildAffected": "./affected.sh npm run buildPackages",
+    "testAffected": "./affected.sh npm run testPackages",
     "publishCi": "lerna publish --conventional-commits -y"
   },
   "devDependencies": {
