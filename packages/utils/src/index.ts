@@ -23,4 +23,8 @@ export class ResponseCreator {
             timestamp: Date.now(),
         };
     }
+
+    static sendStatus(status: number): Partial<HttpResponse> {
+        return { statusCode: status };
+    }
 }
