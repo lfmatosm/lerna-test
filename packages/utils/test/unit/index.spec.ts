@@ -10,4 +10,12 @@ describe('Unit tests for "utils" package', () => {
         };
         expect(result).toStrictEqual(expected);
     });
+
+    test('sendStatus method returns object composed of statusCode', () => {
+        const result = ResponseCreator.sendStatus(204);
+        const expected: Partial<HttpResponse> = {
+            statusCode: 204,
+        };
+        expect(result).toStrictEqual(expected);
+    });
 });
