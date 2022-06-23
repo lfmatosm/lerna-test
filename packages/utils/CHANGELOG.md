@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-utils@1.2.0...lffloyd-test-utils@1.3.0) (2022-06-23)
+
+
+### Features
+
+* **utils:** adds sendStatus method ([3752300](https://github.com/lffloyd/lerna-test/commit/3752300ad250eb04c04a390841b54cf58ace2c4d))
+
+
+
+
+
 # [1.2.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-utils@1.1.2...lffloyd-test-utils@1.2.0) (2022-06-22)
 
 

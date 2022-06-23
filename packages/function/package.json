@@ -1,12 +1,12 @@
 {
   "name": "lffloyd-test-function",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "",
   "main": "dist/src/index.js",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lffloyd-test-utils": "^1.2.0"
+    "lffloyd-test-utils": "^1.3.0"
   },
   "scripts": {
     "build": "tsc",

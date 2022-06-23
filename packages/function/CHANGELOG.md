@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.4.0...lffloyd-test-function@2.0.0) (2022-06-23)
+
+
+### Bug Fixes
+
+* **function:** fixes handling of empty event objects ([2c73a20](https://github.com/lffloyd/lerna-test/commit/2c73a2027ac90597446d17a7cd1cab6d56e27df3))
+
+
+### BREAKING CHANGES
+
+* **function:** An empty event object will trigger an exception and, consequently, return a HTTP
+error status code
+
+
+
+
+
 # [1.4.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.3.1...lffloyd-test-function@1.4.0) (2022-06-22)
 
 
