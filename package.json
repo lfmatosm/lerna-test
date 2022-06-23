@@ -6,7 +6,7 @@
     "bootstrap": "lerna bootstrap",
     "bootstrapPackages": "lerna bootstrap --include-dependencies --include-dependents --scope",
     "build": "lerna run build",
-    "buildPackagse": "lerna run build --include-dependencies --include-dependents --scope",
+    "buildPackages": "lerna run build --include-dependencies --include-dependents --scope",
     "test": "lerna run test",
     "testPackages": "lerna run test --include-dependencies --include-dependents --scope",
     "prune": "lerna run prune",
