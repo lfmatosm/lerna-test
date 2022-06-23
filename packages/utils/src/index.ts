@@ -23,4 +23,15 @@ export class ResponseCreator {
             timestamp: Date.now(),
         };
     }
+
+    /**
+     * Sends a HTTP response with a status code to the consumer.
+     * Should be used when there is no need to return a descriptive 
+     * message to the consumer.
+     * @param status HTTP status code to return
+     * @returns HTTP response
+     */
+    static sendStatus(status: number): Partial<HttpResponse> {
+        return { statusCode: status };
+    }
 }

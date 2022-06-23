@@ -16,7 +16,8 @@ const PAYLOAD = {
 */
 async function handler(event: APIGatewayProxyEvent): Promise<HttpResponse> {
     try {
-        if (!Boolean(event)) throw new Error('Empty event received!');
+        if (!Object.keys(event).length || !Boolean(event))
+            throw new Error('Empty event received!');
         console.info('Successfully invoked handler');
         return ResponseCreator.send(200, PAYLOAD);
     } catch (err) {
