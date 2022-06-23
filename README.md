@@ -44,7 +44,7 @@ lerna info Looking for changed packages since v1.0.0
 Once you select a version, Lerna will update the referred module `package.json` file with its new version, commit the changes and create a tag with the version. Please note that you can choose between major, minor or patch versions to bump.
 
 ### Automatic publishing
-To automatically discover the version needed to bump for each package, just run `npx lerna publish --conventional-commits`. Lerna will ask you accept the changes. If you want to automatically accept any suggestion, pass the `-y` argument to the same command.
+To automatically discover the version needed to bump for each package, just run `npx lerna publish --conventional-commits`. Lerna will ask if you accept the changes. If you want to automatically accept any suggestion, pass the `-y` argument to the same command.
 
 Like on manual publishing, Lerna will update the versions, commit the changes and create tags. Lerna will also create a `CHANGELOG.md` for each package describing the relevant changes included on each version.
 
