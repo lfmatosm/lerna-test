@@ -17,7 +17,7 @@ const PAYLOAD = {
 async function handler(event: APIGatewayProxyEvent): Promise<HttpResponse> {
     try {
         console.info(`Starting lambda execution...`);
-        if (!Object.keys(event).length || !Boolean(event))
+        if (!Object.keys(event).length || !Boolean(event) || event === undefined)
             throw new Error('Empty event received!');
         console.info('Successfully invoked handler');
         return ResponseCreator.send(200, PAYLOAD);
