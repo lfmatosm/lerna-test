@@ -8,7 +8,7 @@ Repo to test out a lerna-based monorepo structure. Configured with jest, typescr
 * [node >= 16.15.1](https://nodejs.org/en/download/) (LTS)
 
 ## Build
-Run the build script using ```./build.sh```. This will execute TS transpilation and execute Jest testes.
+Run the build script using ```./build.sh```. This will execute TS transpilation and execute Jest tests.
 
 ## Commit
 The project suggests the use of [commitizen](https://github.com/commitizen/cz-cli) to ease commit generation following the [conventional commits specs](#links). To install it, execute `npm install commitizen -g`
