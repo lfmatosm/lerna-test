@@ -50,5 +50,5 @@ Like on manual publishing, Lerna will update the versions, commit the changes an
 
 ## Links
 
-* [Angular commit guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+* [Angular commit guidelines](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format)
 * [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
