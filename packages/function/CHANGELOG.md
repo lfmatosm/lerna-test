@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@2.1.0...lffloyd-test-function@2.2.0) (2022-06-24)
+
+
+### Bug Fixes
+
+* **function:** fixes handling of undefined event ([bf5756d](https://github.com/lffloyd/lerna-test/commit/bf5756d72506f064f22ec77550a6e439e11564f3))
+
+
+### Features
+
+* **function:** updates log message ([3a286e4](https://github.com/lffloyd/lerna-test/commit/3a286e440b06a4025069ee1172762115f66eb3da))
+
+
+
+
+
 # [2.1.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@2.0.0...lffloyd-test-function@2.1.0) (2022-06-24)
 
 
