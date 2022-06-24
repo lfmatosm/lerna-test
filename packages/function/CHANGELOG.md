@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@2.0.0...lffloyd-test-function@2.1.0) (2022-06-24)
+
+
+### Features
+
+* **function:** adds logs ([4cab755](https://github.com/lffloyd/lerna-test/commit/4cab755f26bb7609d53d93777bf07ae1b44dc463))
+* **function:** changes log level ([588db86](https://github.com/lffloyd/lerna-test/commit/588db861f7aa9fd8c6521b16873cfa252df50808))
+
+
+
+
+
 # [2.0.0](https://github.com/lffloyd/lerna-test/compare/lffloyd-test-function@1.4.0...lffloyd-test-function@2.0.0) (2022-06-23)
 
 
