@@ -5,7 +5,7 @@
 Repo to test out a lerna-based monorepo structure. Configured with jest, typescript and nx for caching some steps.
 
 ## Environment
-* [node >= 16.15.1](https://nodejs.org/en/download/) (LTS)
+* [node >= 16.15.1](https://nodejs.org/en/download/) (LTS).
 
 ## Build
 Run the build script using ```./build.sh```. This will execute TS transpilation and execute Jest tests.
