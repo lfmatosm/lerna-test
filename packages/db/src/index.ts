@@ -101,4 +101,11 @@ export class ArtistRepository {
     static deleteAll(): void {
         artists = [];
     }
+
+    /**
+     * Counts the Artists
+     */
+     static count(): number {
+        return artists.length;
+    }
 }

@@ -96,6 +96,27 @@ describe('Unit tests for "db" package', () => {
         expect(actual).toStrictEqual(expected);
     });
 
+    test('counts artists', () => {
+        const artist: Artist = {
+            id: '1',
+            name: 'Pink Floyd',
+            genre: 'Prog rock',
+            albums: [
+                {
+                    title: 'Animals',
+                    tracklist: [],
+                    year: 1977
+                }
+            ]
+        };
+
+        const expected = 1;
+
+        ArtistRepository.insert(artist);
+        const actual = ArtistRepository.count();
+        expect(actual).toStrictEqual(expected);
+    });
+
     test('tries to add an invalid artist, throws validation error', () => {
         //@ts-ignore
         const artist: Artist = {
