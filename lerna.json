@@ -4,9 +4,6 @@
   ],
   "useNx": true,
   "version": "independent",
-  "changelogPreset": {
-    "name": "conventionalcommits"
-  },
   "command": {
     "version": {
       "message": "chore(release): [skip ci] publish %s"
