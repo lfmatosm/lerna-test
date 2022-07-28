@@ -3,5 +3,13 @@
     "packages/*"
   ],
   "useNx": true,
-  "version": "independent"
+  "version": "independent",
+  "changelogPreset": {
+    "name": "conventionalcommits"
+  },
+  "command": {
+    "version": {
+      "message": "chore(release): [skip ci] publish %s"
+    }
+  }
 }
