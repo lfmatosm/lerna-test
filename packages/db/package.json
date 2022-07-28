@@ -1,0 +1,13 @@
+{
+  "name": "lffloyd-test-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --silent",
+    "prune": "npm prune --production"
+  }
+}
