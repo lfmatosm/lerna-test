@@ -25,6 +25,7 @@ jobs:
       
       - name: "npm install"
         run: |
+          npm i conventional-changelog-conventionalcommits@5.0.0 -g
           npm install
       
       - name: "Lerna Bootstrap"
